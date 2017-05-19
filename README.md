@@ -1,5 +1,5 @@
 # gameloop
-> :notes: Golang Game Loop implementation
+>  Golang Game Loop implementation
 
 ## Install
 
