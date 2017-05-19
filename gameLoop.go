@@ -45,6 +45,16 @@ func (gl *GameLoop) startLoop() {
 	}
 }
 
+func (gl *GameLoop) GetTickRate () time.Duration {
+	return gl.tickRate
+}
+
+// Set tickRate and restart game loop
+func (gl *GameLoop) SetTickRate (tickRate time.Duration) {
+	gl.tickRate = tickRate
+	gl.Restart()
+}
+
 // Start game loop
 func (gl *GameLoop) Start() {
 	gl.canUpdate = true
@@ -54,4 +64,10 @@ func (gl *GameLoop) Start() {
 // Stop game loop
 func (gl *GameLoop) Stop() {
 	gl.canUpdate = false
+}
+
+// Restart game loop
+func (gl *GameLoop) Restart () {
+	gl.Stop()
+	gl.Start()
 }
