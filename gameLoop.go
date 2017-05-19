@@ -54,6 +54,11 @@ func (gl *GameLoop) SetTickRate(tickRate time.Duration) {
 	gl.Restart()
 }
 
+// Set onUpdate func
+func (gl *GameLoop) SetOnUpdate(onUpdate func(float64)) {
+	gl.onUpdate = onUpdate
+}
+
 // Start game loop
 func (gl *GameLoop) Start() {
 	go gl.startLoop()
