@@ -1,7 +1,8 @@
 # gameloop
-> :video_game: :arrows_counterclockwise: Golang Game Loop implementation
 
 [![GoDoc](https://godoc.org/github.com/kutase/go-gameloop?status.svg)](https://godoc.org/github.com/kutase/go-gameloop)
+
+> :video_game: :arrows_counterclockwise: Golang Game Loop implementation
 
 ## Install
 
