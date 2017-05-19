@@ -1,5 +1,5 @@
 # gameloop
->  Golang Game Loop implementation
+> :video_game: :arrows_counterclockwise: Golang Game Loop implementation
 
 ## Install
 
