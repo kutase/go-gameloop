@@ -1,6 +1,8 @@
 # gameloop
 >  Golang Game Loop implementation
 
+[![GoDoc](https://godoc.org/github.com/kutase/go-gameloop?status.svg)](https://godoc.org/github.com/kutase/go-gameloop)
+
 ## Install
 
 ```bash

@@ -11,6 +11,7 @@ type GameLoop struct {
 	canUpdate bool
 }
 
+// Create new game loop
 func New(tickRate time.Duration, onUpdate func(float64)) *GameLoop {
 	return &GameLoop{
 		onUpdate:  onUpdate,
@@ -44,11 +45,13 @@ func (gl *GameLoop) startLoop() {
 	}
 }
 
+// Start game loop
 func (gl *GameLoop) Start() {
 	gl.canUpdate = true
 	go gl.startLoop()
 }
 
+// Stop game loop
 func (gl *GameLoop) Stop() {
 	gl.canUpdate = false
 }
